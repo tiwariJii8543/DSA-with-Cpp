@@ -8,8 +8,7 @@ This repository contains my Data Structures & Algorithms practice in C++.
 - Functions & Pointer
 - Pattern Problems
 - Arrays
-- Sorting
-- Searching
+- Searching & Sorting Algo
 
 ## Purpose
 - Improve problem-solving skills

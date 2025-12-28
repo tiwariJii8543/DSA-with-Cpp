@@ -7,9 +7,6 @@ void insertPosition(int arr[],int n){
     cin>>key;
     while(low<=high){
         mid=low+(high-low)/2;
-        if(result<n){
-            
-        }
         if(arr[mid]==key){
             low=mid+1;
             result=low;

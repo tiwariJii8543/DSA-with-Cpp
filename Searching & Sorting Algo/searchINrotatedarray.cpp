@@ -3,7 +3,7 @@ using namespace std;
 
 // searching element in a rotated sorted array.......
 
-int min(int arr[],int n){
+int search(int arr[],int n){
     int low=0,high=n-1,mid,key,ans=-1;
     cout<<"enter the element to search:";
     cin>>key;
@@ -34,7 +34,7 @@ int min(int arr[],int n){
 }
 int main(){
     int n=8,arr[100]={8,9,2,3,4,5,6,7};
-    int index=min(arr,n);
+    int index=search(arr,n);
     if(index!=-1){
         cout<<"elemnt found at index: "<<index;
     }else{

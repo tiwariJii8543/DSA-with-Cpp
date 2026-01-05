@@ -1,10 +1,10 @@
-
 #include <iostream>
+#include<vector>
 using namespace std;
 
-int main() {
-    int arr[3][3] = {0, 1, 2, 3, 4, 5, 6, 7, 8};
-    // printing row wise Sum
+vector< vector<int> > rowColSum(int row, int col){
+    vector< vector<int> > arr={{0,1,2},{3,4,5},{6,7,8}};
+    // printing row wise sum
     for (int i = 0; i < 3; i++) {
         cout <<" row "<<i+1<<" : ";
         int sum=0;
@@ -24,6 +24,9 @@ int main() {
         }
         cout <<"  sum is: "<<sum<< endl;
     }
-    
-    return 0;
+    return arr;
+}
+int main(){
+    int row=3,col=3;
+    rowColSum(row,col);
 }

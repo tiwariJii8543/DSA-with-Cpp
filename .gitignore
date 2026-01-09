@@ -1,0 +1,7 @@
+# Ignore all executable files
+*.exe
+
+# Optional: Ignore other common build artifacts
+*.dll
+*.pdb
+*.msi

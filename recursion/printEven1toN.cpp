@@ -1,12 +1,15 @@
 #include<iostream>
 using namespace std;
 
-int print(int n){
+void print(int n){
     if(n==0){
-        return n;
+        return;
     }
-    cout<<n<<" ";
-    return print(n-1);
+    print(n-1);
+    if(n%2==0){
+        cout<<n<<" ";
+    }
+   
 }
 int main(){
     int n;

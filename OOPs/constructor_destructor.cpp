@@ -23,4 +23,4 @@ public:
 int main(){
     Customer A1("Harsh",101,1000);
     A1.display();
-}p
+}

@@ -24,7 +24,8 @@ A structured repository of **Data Structures and Algorithms implemented in C++**
 - Searching & Sorting Algorithms  
 - Two Pointer Technique  
 - Recursion  
-- Pattern Problems  
+- Pattern Problems
+- Object Oriented Programming Concept
 
 ---
 

@@ -1,4 +1,4 @@
-// creating linked list using recursion, adding elements at last.....
+// creating linked list using recursion, adding elements at beggining.....
 #include<iostream>
 using namespace std;
 
@@ -20,18 +20,19 @@ void printList(){
 
 }
 };
-Node *insertAtEnd(int arr[],int idx,int size){
+Node *insertAtStart(int arr[],int idx,int size,Node*prev){
     if(idx==size){
-        return NULL;
+        return prev;
     }
     Node*temp=new Node(arr[idx]);
-    temp->next=insertAtEnd(arr,idx+1,size);
-    return temp;
+    temp->next=prev;
+    return insertAtStart(arr,idx+1,size,temp);
 }
 int main(){
-    Node*Head=NULL;
+    Node*Head;
     int arr[100]={1,2,3,4,5};
-    Head=insertAtEnd(arr,0,5);
+    int size=5;
+    Head=insertAtStart(arr,0,size,NULL);
     if (Head != NULL) {
         Head->printList();
     } else {

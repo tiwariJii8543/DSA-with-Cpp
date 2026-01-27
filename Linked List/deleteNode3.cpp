@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-// deleting Node from the end of the Linked List.....
+// deleting Node from the given position of the Linked List.....
 
 class Node{
 public:
@@ -9,7 +9,7 @@ public:
     Node*next=nullptr;
 Node(int val){
     this->data=val;
-    this->next=next;
+    this->next=nullptr;
 }
 static Node*takeINput(){
     int val;
@@ -42,24 +42,35 @@ void printList(Node*Head){
 
 Node*DeleteNode(Node*Head){
     Node*temp=Head;
+    int x;
+    cout<<"Enter which node should be deleted: ";
+    cin>>x;
     if(Head==NULL){
         cout<<"Node not available to delete."<<endl;
+        return NULL;
+    }
+    // case 1: delete Head...
+    if(x==1){
+        temp=Head->next;
+        delete Head;
+        Head=temp;
         return Head;
     }
-    if(Head->next==NULL){
-        delete Head;
-    }else{
-        temp=temp->next;
-        while (temp->next->next = nullptr) {
-            delete temp->next;
-            temp->next=NULL;
-        }
-
+    // case 2: delete node from given position
+    Node*prev=nullptr;
+    Node*curr=Head;
+    int count=1;
+    while(curr!=NULL && count<x){
+        prev=curr;
+        curr=curr->next;
+        count++;
     }
-// temp->next is the last node
-    // delete temp->next; 
-    // temp->next = nullptr; // This is the crucial step!
-        // }
+    if (curr == nullptr) {
+        cout << "Position out of bounds." << endl;
+        return Head;
+    }
+    prev->next = curr->next; // Bypass the node to be deleted
+    delete curr;             // Free memory
     return Head;
 }
 int main(){

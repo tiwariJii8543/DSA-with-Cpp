@@ -26,6 +26,7 @@ A structured repository of **Data Structures and Algorithms implemented in C++**
 - Recursion  
 - Pattern Problems
 - Object Oriented Programming Concept
+- Linked List
 
 ---
 
@@ -39,10 +40,9 @@ Each folder contains:
 
 ## 🔮 Upcoming Topics
 - Stack & Queue
-- Linked List
 - Hashing
-- Trees & Graphs etc.
-
+- Trees & Graphs
+- Dynamic Programming etc.
 ---
 
 ## ⭐ Support

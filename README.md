@@ -26,7 +26,7 @@ A structured repository of **Data Structures and Algorithms implemented in C++**
 - Recursion  
 - Pattern Problems
 - Object Oriented Programming Concept
-- Linked List
+- Linked List 
 
 ---
 

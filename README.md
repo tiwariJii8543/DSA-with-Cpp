@@ -17,7 +17,7 @@ A structured repository of **Data Structures and Algorithms implemented in C++**
 
 ---
 
-## 🧠 Topics Included
+## 🧠 Topics Included (Phase 1 of 50_Days)
 - Conditional Statements & Loops  
 - Functions & Pointers  
 - Arrays & Strings  
@@ -38,7 +38,7 @@ Each folder contains:
 
 ---
 
-## 🔮 Upcoming Topics
+## 🔮 Upcoming Topics (Phase 2)
 - Stack & Queue
 - Hashing
 - Trees & Graphs
